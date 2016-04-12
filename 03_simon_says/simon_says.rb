@@ -19,7 +19,7 @@ def first_word phrase
 end
 
 def titleize phrase
-  little_words = ['and', 'over', 'the']
+  little_words = ['and', 'over', 'the', 'in', 'of', 'a', 'an']
   capitalized = []
   words = phrase.downcase.split
 
