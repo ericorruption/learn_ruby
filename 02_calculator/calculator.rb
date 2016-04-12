@@ -9,3 +9,7 @@ end
 def sum numbers
   numbers.inject(0) { |sum,i| sum + i }
 end
+
+def multiply(*numbers)
+  numbers.inject { |total, i | total * i }
+end
