@@ -9,3 +9,7 @@ end
 def repeat message, amount = 2
   "#{ message }#{ (' ' + message) * (amount - 1) }"
 end
+
+def start_of_word word, amount
+  word.slice(0, amount)
+end
