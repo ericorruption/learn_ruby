@@ -1,4 +1,6 @@
-def translate_word word
+def translate_word word, capitalize = false
+  word.downcase! if capitalize
+
   vowels = ["a","e","i","o","u"]
   letters = word.split("");
   consonants = []
@@ -16,15 +18,17 @@ def translate_word word
   end
 
   consonants = consonants.join
+  word = word + consonants
+  word.capitalize! if capitalize
 
-  return "#{word + consonants + 'ay'}"
+  "#{ word + 'ay'}"
 end
 
 def translate words
   latinized = []
 
   words.split.each do | word |
-    latinized << translate_word(word)
+    latinized << translate_word(word, word[0].capitalize == word[0])
   end
 
   latinized.join(" ")
