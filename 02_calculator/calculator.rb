@@ -17,3 +17,9 @@ end
 def power(number,power)
   number ** power
 end
+
+def factorial number
+  return 1 if number == 0
+
+  multiply(*1..number)
+end
