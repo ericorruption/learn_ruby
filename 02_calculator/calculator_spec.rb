@@ -78,7 +78,6 @@ end
 # write tests and code for the following:
 
 describe "#multiply" do
-
   it "multiplies two numbers" do
     expect(multiply(2,3)).to eq(6)
   end
@@ -89,7 +88,9 @@ describe "#multiply" do
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+    expect(power(8,3)).to eq(512)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial

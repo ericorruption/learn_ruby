@@ -13,3 +13,7 @@ end
 def multiply(*numbers)
   numbers.inject { |total, i | total * i }
 end
+
+def power(number,power)
+  number ** power
+end
