@@ -1,15 +1,10 @@
 def translate_word word
   vowels = ["a","e","i","o","u"]
-  first_letters = [
-    word.slice(0),
-    word.slice(1),
-    word.slice(2)
-  ];
-
+  letters = word.split("");
   consonants = []
   had_q = false
 
-  first_letters.each_with_index do | letter , i |
+  letters.each_with_index do | letter , i |
     if vowels.include? letter and not had_q
       break
     else
